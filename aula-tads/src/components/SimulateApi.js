@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './SimulateApi.css';
+import { Link } from 'react-router-dom';
 
 const infoCampoMourao = {
     dataCriacao: '10/10/1947',
@@ -23,6 +24,9 @@ const SimulateApi = () => {
 
     return (
         <div className='container'>
+            <Link to="/ToDoList">
+                Ir p/ ToDoList
+            </Link>
             {info ? <div>
                 <h3>{info.nome}</h3>
                 <h4>{info.dataCriacao}</h4>
